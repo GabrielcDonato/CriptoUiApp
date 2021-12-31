@@ -268,7 +268,7 @@ class FacebookBtn extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Image.network(
-                "https://firebasestorage.googleapis.com/v0/b/flutterbricks-public.appspot.com/o/crypto%2Ffacebook%20(2).png?alt=media&token=9c275bf0-2bf7-498a-9405-9ae99df8d8f2",
+                "https://firebasestorage.googleapis.com/v0/b/crypto-64d0f.appspot.com/o/facebook.png?alt=media&token=0a74d69c-4edf-4d48-a181-1ce794255e5a",
                 width: 20,
               ),
               const SizedBox(

@@ -10,28 +10,30 @@ class SignUpPage extends StatelessWidget {
       body: SafeArea(
           bottom: false,
           child: ListView(
-            children: const [
-              SizedBox(
+            children: [
+              const SizedBox(
                 height: 25,
               ),
-              Heading("Sign Up"),
-              SizedBox(
+              const Heading("Sign Up"),
+              const SizedBox(
                 height: 25,
               ),
-              EmailInput(),
-              PasswordInput(),
-              ConfirmPasswordInput(),
+              const EmailInput(),
+              const PasswordInput(),
+              const ConfirmPasswordInput(),
               Padding(
-                  padding: EdgeInsets.only(top: 0.0, left: 15.0),
+                  padding: const EdgeInsets.only(top: 0.0, left: 15.0),
                   child: TextButton(
-                    child: Text(
+                    child: const Text(
                       "Already have a login? Click here",
                       style: TextStyle(fontWeight: FontWeight.normal, color: Color(0xff5ED5A8)),
                     ),
-                    onPressed: null,
+                    onPressed: () {
+                      Navigator.popAndPushNamed(context, '/sign_in');
+                    },
                   )),
-              SignInButton(),
-              Align(
+              const SignInButton(),
+              const Align(
                 alignment: Alignment.center,
                 child: Padding(
                   padding: EdgeInsets.only(top: 15.0),
@@ -41,7 +43,7 @@ class SignUpPage extends StatelessWidget {
                   ),
                 ),
               ),
-              SocialButtons(),
+              const SocialButtons(),
             ],
           )),
     );
@@ -78,7 +80,7 @@ class EmailInput extends StatelessWidget {
             "Email",
             style: TextStyle(fontSize: 14, fontWeight: FontWeight.normal, color: Colors.white.withOpacity(.9)),
           ),
-          SizedBox(
+          const SizedBox(
             height: 8,
           ),
           Container(
@@ -129,7 +131,7 @@ class PasswordInput extends StatelessWidget {
             "Password",
             style: TextStyle(fontSize: 14, fontWeight: FontWeight.normal, color: Colors.white.withOpacity(.9)),
           ),
-          SizedBox(
+          const SizedBox(
             height: 8,
           ),
           Container(
@@ -181,7 +183,7 @@ class ConfirmPasswordInput extends StatelessWidget {
             "Confirm Password",
             style: TextStyle(fontSize: 14, fontWeight: FontWeight.normal, color: Colors.white.withOpacity(.9)),
           ),
-          SizedBox(
+          const SizedBox(
             height: 8,
           ),
           Container(
@@ -242,7 +244,7 @@ class SignInButton extends StatelessWidget {
           child: const Text("Sign Up", style: TextStyle(color: Colors.black)),
           onPressed: () {
             //Navigate Home Here
-            Navigator.popAndPushNamed(context, '/sign_in');
+            Navigator.popAndPushNamed(context, '/register_phone');
             //or move screens
           },
         ));
