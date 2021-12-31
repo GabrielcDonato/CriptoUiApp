@@ -4,6 +4,7 @@ import 'package:cripto/modules/auth/presentation/pages/sign_in_page.dart';
 import 'package:cripto/modules/auth/presentation/pages/sign_up_page.dart';
 import 'package:cripto/modules/auth/presentation/pages/sign_up_sucess_page.dart';
 import 'package:cripto/modules/auth/presentation/pages/sms_verification.dart';
+import 'package:cripto/modules/home/presentation/home_page.dart';
 import 'package:flutter/material.dart';
 
 class RouteGenerator {
@@ -28,6 +29,10 @@ class RouteGenerator {
 
       case '/sign_in':
         return MaterialPageRoute(builder: (context) => const SignInPage());
+
+      //Home:
+      case '/home':
+        return MaterialPageRoute(builder: (context) => const HomePage());
     }
   }
 }
