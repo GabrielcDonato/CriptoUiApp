@@ -5,11 +5,19 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Text(
-        "oi",
-        style: TextStyle(
-          color: Colors.amber,
+    return Scaffold(
+      backgroundColor: const Color(0xff1b232A),
+      body: SafeArea(
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: const [
+              Text('data',
+                  style: TextStyle(
+                    color: Color(0xff5ED5A8),
+                  )),
+            ],
+          ),
         ),
       ),
     );

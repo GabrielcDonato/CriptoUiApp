@@ -188,6 +188,7 @@ class SignInButton extends StatelessWidget {
           child: const Text("Sign In", style: TextStyle(color: Colors.black)),
           onPressed: () {
             //Navigate Home Here
+            Navigator.pushNamed(context, '/home');
 
             //or move screens
           },
@@ -279,7 +280,6 @@ class FacebookBtn extends StatelessWidget {
           ),
           onPressed: () {
             //Navigate Home Here
-
             //or move screens
           },
         ));

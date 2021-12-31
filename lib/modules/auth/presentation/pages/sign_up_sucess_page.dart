@@ -67,9 +67,13 @@ class GetStartedBtn extends StatelessWidget {
           )
         ]),
         child: TextButton(
-          child: const Text("Get Started", style: TextStyle(color: Colors.black)),
+          child: const Text(
+            "Get Started",
+            style: TextStyle(color: Colors.black),
+          ),
           onPressed: () {
             //Navigate Home Here
+            Navigator.popAndPushNamed(context, '/home');
             //or move screens
           },
         ));

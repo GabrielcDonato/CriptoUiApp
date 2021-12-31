@@ -22,16 +22,20 @@ class SignUpPage extends StatelessWidget {
               const PasswordInput(),
               const ConfirmPasswordInput(),
               Padding(
-                  padding: const EdgeInsets.only(top: 0.0, left: 15.0),
-                  child: TextButton(
-                    child: const Text(
-                      "Already have a login? Click here",
-                      style: TextStyle(fontWeight: FontWeight.normal, color: Color(0xff5ED5A8)),
+                padding: const EdgeInsets.only(top: 0.0, left: 15.0),
+                child: TextButton(
+                  child: const Text(
+                    "Already have a login? Click here",
+                    style: TextStyle(
+                      fontWeight: FontWeight.normal,
+                      color: Color(0xff5ED5A8),
                     ),
-                    onPressed: () {
-                      Navigator.popAndPushNamed(context, '/sign_in');
-                    },
-                  )),
+                  ),
+                  onPressed: () {
+                    Navigator.popAndPushNamed(context, '/sign_in');
+                  },
+                ),
+              ),
               const SignInButton(),
               const Align(
                 alignment: Alignment.center,
@@ -241,7 +245,10 @@ class SignInButton extends StatelessWidget {
           )
         ]),
         child: TextButton(
-          child: const Text("Sign Up", style: TextStyle(color: Colors.black)),
+          child: Text(
+            "Sign Up",
+            style: TextStyle(color: Colors.black),
+          ),
           onPressed: () {
             //Navigate Home Here
             Navigator.popAndPushNamed(context, '/register_phone');
