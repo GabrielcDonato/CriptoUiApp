@@ -7,7 +7,7 @@ class SignUpPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xff1b232A),
-      //o 0xff é padrão para colocar cores hexadecimais
+      //o 0xff é padrão para colocar cores hexadecimaiss
       body: SafeArea(
           bottom: false,
           child: ListView(
