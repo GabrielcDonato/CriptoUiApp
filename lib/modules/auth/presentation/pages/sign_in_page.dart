@@ -189,7 +189,6 @@ class SignInButton extends StatelessWidget {
           onPressed: () {
             //Navigate Home Here
             Navigator.pushNamed(context, '/home');
-
             //or move screens
           },
         ));
