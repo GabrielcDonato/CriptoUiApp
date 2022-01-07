@@ -17,8 +17,8 @@ class _SMSVerificationPageState extends State<SMSVerificationPage> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const BackArrow(),
-            const Heading("Enter your code"),
-            const SubHeading("Please type the code we sent to +1 (504) 321 1234"),
+            const HeadingSmsVerification("Enter your code"),
+            const SubHeadingSmsVerification("Please type the code we sent to +1 (504) 321 1234"),
             const SizedBox(
               height: 15,
             ),
@@ -51,10 +51,10 @@ class VerificationInputs extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
-        MobileInput(m1, fn1, fn2),
-        MobileInput(m2, fn2, fn3),
-        MobileInput(m3, fn3, fn4),
-        MobileInput(m4, fn4, fn4),
+        MobileInputVerification(m1, fn1, fn2),
+        MobileInputVerification(m2, fn2, fn3),
+        MobileInputVerification(m3, fn3, fn4),
+        MobileInputVerification(m4, fn4, fn4),
       ],
     );
   }
@@ -82,9 +82,9 @@ class BackArrow extends StatelessWidget {
   }
 }
 
-class Heading extends StatelessWidget {
+class HeadingSmsVerification extends StatelessWidget {
   final String text;
-  const Heading(this.text);
+  const HeadingSmsVerification(this.text);
 
   @override
   Widget build(BuildContext context) {
@@ -98,9 +98,9 @@ class Heading extends StatelessWidget {
   }
 }
 
-class SubHeading extends StatelessWidget {
+class SubHeadingSmsVerification extends StatelessWidget {
   final String text;
-  const SubHeading(this.text);
+  const SubHeadingSmsVerification(this.text);
 
   @override
   Widget build(BuildContext context) {
@@ -114,18 +114,18 @@ class SubHeading extends StatelessWidget {
   }
 }
 
-class MobileInput extends StatefulWidget {
+class MobileInputVerification extends StatefulWidget {
   TextEditingController textEditingController;
   FocusNode fcNode;
   FocusNode fcNode2;
 
-  MobileInput(this.textEditingController, this.fcNode, this.fcNode2);
+  MobileInputVerification(this.textEditingController, this.fcNode, this.fcNode2);
 
   @override
-  State<MobileInput> createState() => _MobileInputState();
+  State<MobileInputVerification> createState() => _MobileInputVerificationState();
 }
 
-class _MobileInputState extends State<MobileInput> {
+class _MobileInputVerificationState extends State<MobileInputVerification> {
   @override
   Widget build(BuildContext context) {
     return Padding(

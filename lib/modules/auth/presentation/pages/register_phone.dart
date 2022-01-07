@@ -11,13 +11,13 @@ class RegisterPhonePage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: const [
-            BackArrow(),
-            Heading("Register with mobile"),
+            BackArrowPhone(),
+            HeadingPhone("Register with mobile"),
             SubHeading("Please type your number, then we’ll send a verification code for authentication."),
             SizedBox(
               height: 15,
             ),
-            MobileInput(),
+            MobileInputRegister(),
             SizedBox(
               height: 25,
             ),
@@ -29,8 +29,8 @@ class RegisterPhonePage extends StatelessWidget {
   }
 }
 
-class BackArrow extends StatelessWidget {
-  const BackArrow({Key? key}) : super(key: key);
+class BackArrowPhone extends StatelessWidget {
+  const BackArrowPhone({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -51,9 +51,9 @@ class BackArrow extends StatelessWidget {
   }
 }
 
-class Heading extends StatelessWidget {
+class HeadingPhone extends StatelessWidget {
   final String text;
-  const Heading(this.text);
+  const HeadingPhone(this.text);
 
   @override
   Widget build(BuildContext context) {
@@ -83,8 +83,8 @@ class SubHeading extends StatelessWidget {
   }
 }
 
-class MobileInput extends StatelessWidget {
-  const MobileInput({Key? key}) : super(key: key);
+class MobileInputRegister extends StatelessWidget {
+  const MobileInputRegister({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

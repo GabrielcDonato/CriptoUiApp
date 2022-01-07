@@ -15,7 +15,7 @@ class SignUpPage extends StatelessWidget {
               const SizedBox(
                 height: 25,
               ),
-              const Heading("Sign Up"),
+              const HeadingSignUp("Sign Up"),
               const SizedBox(
                 height: 25,
               ),
@@ -37,7 +37,7 @@ class SignUpPage extends StatelessWidget {
                   },
                 ),
               ),
-              const SignInButton(),
+              const SignInButtonSignUpPage(),
               const Align(
                 alignment: Alignment.center,
                 child: Padding(
@@ -55,9 +55,9 @@ class SignUpPage extends StatelessWidget {
   }
 }
 
-class Heading extends StatelessWidget {
+class HeadingSignUp extends StatelessWidget {
   final String text;
-  const Heading(this.text, {Key? key}) : super(key: key);
+  const HeadingSignUp(this.text, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -226,8 +226,8 @@ class ConfirmPasswordInput extends StatelessWidget {
   }
 }
 
-class SignInButton extends StatelessWidget {
-  const SignInButton({
+class SignInButtonSignUpPage extends StatelessWidget {
+  const SignInButtonSignUpPage({
     Key? key,
   }) : super(key: key);
 

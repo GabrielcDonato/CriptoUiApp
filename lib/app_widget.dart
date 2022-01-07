@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'core/routes/route_generator_service.dart';
+import 'core/core.dart';
 
 class AppWidget extends StatelessWidget {
   const AppWidget({Key? key}) : super(key: key);

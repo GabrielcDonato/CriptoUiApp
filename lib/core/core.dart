@@ -1,1 +1,2 @@
-export 'shared/app_images.dart';
+export 'shared/shared.dart';
+export 'routes/routes.dart';

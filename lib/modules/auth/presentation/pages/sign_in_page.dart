@@ -12,12 +12,12 @@ class SignInPage extends StatelessWidget {
           child: ListView(
             children: const [
               Spacer(),
-              Heading("Sign In"),
+              HeadingSignIn("Sign In"),
               SizedBox(
                 height: 25,
               ),
-              EmailInput(),
-              PasswordInput(),
+              EmailInputSignIn(),
+              PasswordInputSignIn(),
               Padding(
                   padding: EdgeInsets.only(top: 0.0, left: 15.0),
                   child: TextButton(
@@ -38,17 +38,17 @@ class SignInPage extends StatelessWidget {
                   ),
                 ),
               ),
-              SocialButtons(),
+              SocialButtonsSignIn(),
             ],
           )),
     );
   }
 }
 
-class Heading extends StatelessWidget {
+class HeadingSignIn extends StatelessWidget {
   final String text;
   // ignore: use_key_in_widget_constructors
-  const Heading(this.text);
+  const HeadingSignIn(this.text);
 
   @override
   Widget build(BuildContext context) {
@@ -62,8 +62,8 @@ class Heading extends StatelessWidget {
   }
 }
 
-class EmailInput extends StatelessWidget {
-  const EmailInput({Key? key}) : super(key: key);
+class EmailInputSignIn extends StatelessWidget {
+  const EmailInputSignIn({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -113,8 +113,8 @@ class EmailInput extends StatelessWidget {
   }
 }
 
-class PasswordInput extends StatelessWidget {
-  const PasswordInput({Key? key}) : super(key: key);
+class PasswordInputSignIn extends StatelessWidget {
+  const PasswordInputSignIn({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -195,8 +195,8 @@ class SignInButton extends StatelessWidget {
   }
 }
 
-class SocialButtons extends StatelessWidget {
-  const SocialButtons({Key? key}) : super(key: key);
+class SocialButtonsSignIn extends StatelessWidget {
+  const SocialButtonsSignIn({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -204,14 +204,14 @@ class SocialButtons extends StatelessWidget {
       padding: const EdgeInsets.only(top: 15.0),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: const [FacebookBtn(), GoogleBtn()],
+        children: const [FacebookBtnSignIn(), GoogleBtnSignIn()],
       ),
     );
   }
 }
 
-class GoogleBtn extends StatelessWidget {
-  const GoogleBtn({
+class GoogleBtnSignIn extends StatelessWidget {
+  const GoogleBtnSignIn({
     Key? key,
   }) : super(key: key);
 
@@ -248,8 +248,8 @@ class GoogleBtn extends StatelessWidget {
   }
 }
 
-class FacebookBtn extends StatelessWidget {
-  const FacebookBtn({
+class FacebookBtnSignIn extends StatelessWidget {
+  const FacebookBtnSignIn({
     Key? key,
   }) : super(key: key);
 
